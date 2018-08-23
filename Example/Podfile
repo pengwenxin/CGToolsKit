@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CGToolsKit_Example' do
+  pod 'CGToolsKit', :path => '../'
+
+  target 'CGToolsKit_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
